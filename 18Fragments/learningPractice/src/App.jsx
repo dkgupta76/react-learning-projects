@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
 
 function App() {
   let foodItems = [
-    "DAAAL",
+    "Sabji",
     " CHAVAL ",
     "ACHHAR",
     "SALAD",
@@ -16,7 +16,7 @@ function App() {
   ];
   return (
     <>
-      <h1>Healthy Foods</h1>
+      <h1 className="food-heading">Healthy Foods</h1>
       <ErrorMessage items = {foodItems}></ErrorMessage>
       <FoodItems items ={foodItems}></FoodItems>
     </>
